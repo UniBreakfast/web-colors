@@ -5,6 +5,7 @@
   <style>
     html, body {
       height: 100%;
+      width: 100%;
       margin: 0;
       display: flex;
       background: cornsilk;
@@ -35,7 +36,7 @@
     for (color in colors) btns.innerHTML += 
       `<button id=${color}>${colors[color]}</button>`
     
-    body.onclick = e => { alert(1)
+    body.onclick = e => {
       if (e.target == body) btns.classList.toggle('hidden')
     }
   </script>
