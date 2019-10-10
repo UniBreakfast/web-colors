@@ -35,7 +35,7 @@
     for (color in colors) btns.innerHTML += 
       `<button id=${color}>${colors[color]}</button>`
     
-    body.onclick = e => {
+    body.onclick = e => { alert(1)
       if (e.target == body) btns.classList.toggle('hidden')
     }
   </script>
