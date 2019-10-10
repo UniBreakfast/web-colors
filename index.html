@@ -11,11 +11,14 @@
     #btns {
       margin: auto;
     }
+    .hidden {
+      display: none;
+    }
   </style>
   <link rel=stylesheet href=style.css>
   
 </head>
-<body>
+<body id=body>
   <div id=btns></div>
   
   <script>
@@ -30,6 +33,10 @@
     }
     for (color in colors) btns.innerHTML += 
       `<button id=${color}>${colors[color]}</button>`
+    
+    body.onclick = e => {
+      if (e.target == body) btns.classList.toggle('hidden')
+    }
   </script>
   <script src=script.js></script>
 </body>
