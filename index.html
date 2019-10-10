@@ -29,10 +29,10 @@
       red: 'красный',
       orange: 'оранжевый',
       yellow: 'желтый',
-      green: 'зеленый',
-      teal: 'голубой',
+      lime: 'зеленый',
+      cyan: 'голубой',
       blue: 'синий',
-      violet: 'фиолетовый'
+      purple: 'фиолетовый'
     }
     for (color in colors) btns.innerHTML += 
       `<button id=${color}>${colors[color]}</button>`
@@ -44,7 +44,7 @@
     
     btns.onclick = e => {
       if (e.target == btns) return
-      alert(body.style.background = e.target.id)
+      body.style.background = e.target.id
     }
   </script>
   <script src=script.js></script>
