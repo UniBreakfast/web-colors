@@ -12,6 +12,7 @@
     }
     #btns {
       margin: auto;
+      text-align: center;
     }
     .hidden {
       display: none;
@@ -37,7 +38,13 @@
       `<button id=${color}>${colors[color]}</button>`
     
     body.onclick = e => {
-      if (e.target == body) btns.classList.toggle('hidden')
+      if ([body, btns].includes(e.target)) 
+        btns.classList.toggle('hidden')
+    }
+    
+    btns.onclick = e => {
+      if (e.target == btns) return
+      body.style.background = e.target.id
     }
   </script>
   <script src=script.js></script>
