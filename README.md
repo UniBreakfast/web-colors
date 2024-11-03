@@ -1,4 +1,5 @@
-# web-colors
+# [web-colors](https://github.com/UniBreakfast/web-colors)
+
 ## a small project with atomic commits
 
 The goal was to do some minor development but concentrate on committing to GitHub very often, basically as soon as change is made.
